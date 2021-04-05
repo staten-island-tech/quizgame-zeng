@@ -1,69 +1,32 @@
-var score = 0;
-const questionContent = [
-  {
-    questionOne: "What is 5 + 5?",
-    a: "10",
-    b: "8",
-    c: "20",
-    d: "15",
-    correctChoice: "a",
-  },
-  {
-    questionTwo: "What is 10 + 30?",
-    a: "30",
-    b: "20",
-    c: "50",
-    d: "40",
-    correctChoice: "d",
-  },
-  {
-    questionThree: "What is 25 + 50?",
-    a: "70",
-    b: "80",
-    c: "75",
-    d: "65",
-    correctChoice: "c",
-  },
-  {
-    questionFour: "What is 60 + 80?",
-    a: "110",
-    b: "140",
-    c: "86",
-    d: "130",
-    correctChoice: "b",
-  },
-  {
-    questionFive: "What is 589 + 876?",
-    a: "1365",
-    b: "1465",
-    c: "1565",
-    d: "1665",
-    correctChoice: "b",
-  },
-];
-
 function check() {
-  const quiz = document.getElementById("quiz");
-  const result = document.getElementById("result");
-  if (questionOne == "a") {
-    score++;
-  }
-  if (questionTwo == "d") {
-    score++;
-  }
-  if (questionThree == "c") {
-    score++;
-  }
-  if (questionFour == "b") {
-    score++;
-  }
-  if (questionFive == "b") {
-    score++;
+  const question1 = document.quiz.question1.value;
+  const question2 = document.quiz.question2.value;
+  const question3 = document.quiz.question3.value;
+  const question4 = document.quiz.question4.value;
+  const question5 = document.quiz.question5.value;
+  let correct = 0;
+
+  if (question1 == "10") {
+    correct++;
   }
 
-  if (score <= 3) {
-    result.textContent = "Your result is $(score). You did poorly!";
-  } else {
-    result.textContent = "Your result is $(score). You did great!";
+  if (question2 == "40") {
+    correct++;
   }
+
+  if (question3 == "75") {
+    correct++;
+  }
+
+  if (question4 == "140") {
+    correct++;
+  }
+
+  if (question5 == "1465") {
+    correct++;
+  }
+
+  document.getElementById("after_submit").style.visibility = "visible";
+  document.getElementById("number_correct").innerHTML =
+    "You got " + correct + " correct.";
 }

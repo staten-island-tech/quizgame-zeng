@@ -7,49 +7,41 @@
     <link href="style.css" rel="stylesheet" >
 </head>
 <body>
-    <div class="container">
-        <div>
+    <form id ="quiz" name = "quiz">
             <p>1. What is 5 + 5?</p>
-            <p><input type="radio" name="Question 1" value="10">A. 10</p>
-            <p><input type="radio" name="Question 1" value="8">B. 8</p>
-            <p><input type="radio" name="Question 1" value="20">C. 20</p>
-            <p><input type="radio" name="Question 1" value="15">D. 15</p>
-        </div>
+            <p><input type="radio" id="mc" name="question1" value="10">A. 10</p>
+            <p><input type="radio" id="mc" name="question1" value="8">B. 8</p>
+            <p><input type="radio" id="mc" name="question1" value="20">C. 20</p>
+            <p><input type="radio" id="mc" name="question1" value="15">D. 15</p>
 
-        <div>
             <p>2. What is 10 + 30?</p>
-            <p><input type="radio" name="Question 2" value="30">A. 30</p>
-            <p><input type="radio" name="Question 2" value="20">B. 20</p>
-            <p><input type="radio" name="Question 2" value="50">C. 50</p>
-            <p><input type="radio" name="Question 2" value="40">D. 40</p>
-        </div>
+            <p><input type="radio" id="mc" name="question2" value="30">A. 30</p>
+            <p><input type="radio" id="mc" name="question2" value="20">B. 20</p>
+            <p><input type="radio" id="mc" name="question2" value="50">C. 50</p>
+            <p><input type="radio" id="mc" name="question2" value="40">D. 40</p>
 
-        <div>
             <p>3. What is 25 + 50?</p>
-            <p><input type="radio" name="Question 3" value="70">A. 70</p>
-            <p><input type="radio" name="Question 3" value="80">B. 80</p>
-            <p><input type="radio" name="Question 3" value="75">C. 75</p>
-            <p><input type="radio" name="Question 3" value="65">D. 65</p>
-        </div>
+            <p><input type="radio" id="mc" name="question3" value="70">A. 70</p>
+            <p><input type="radio" id="mc" name="question3" value="80">B. 80</p>
+            <p><input type="radio" id="mc" name="question3" value="75">C. 75</p>
+            <p><input type="radio" id="mc" name="question3" value="65">D. 65</p>
 
-        <div>
             <p>4. What is 60 + 80?</p>
-            <p><input type="radio" name="Question 4" value="110">A. 110</p>
-            <p><input type="radio" name="Question 4" value="140">B. 140</p>
-            <p><input type="radio" name="Question 4" value="86">C. 86</p>
-            <p><input type="radio" name="Question 4" value="130">D. 130</p>
-        </div>
+            <p><input type="radio" id="mc" name="question4" value="110">A. 110</p>
+            <p><input type="radio" id="mc"name="question4" value="140">B. 140</p>
+            <p><input type="radio" id="mc" name="question4" value="86">C. 86</p>
+            <p><input type="radio" id="mc" name="question4" value="130">D. 130</p>
 
-        <div>
             <p>5. What is 589 + 876?</p>
-            <p><input type="radio" name="Question 5" value="1365">A. 1365</p>
-            <p><input type="radio" name="Question 5" value="1465">B. 1465</p>
-            <p><input type="radio" name="Question 5" value="1565">C. 1565</p>
-            <p><input type="radio" name="Question 5" value="1665">D. 1665</p>
-        </div>
+            <p><input type="radio" id="mc" name="question5" value="1365">A. 1365</p>
+            <p><input type="radio" id="mc" name="question5" value="1465">B. 1465</p>
+            <p><input type="radio" id="mc" name="question5" value="1565">C. 1565</p>
+            <p><input type="radio" id="mc" name="question5" value="1665">D. 1665</p>
 
-        <input type="button" name="" value="Submit" id="button" onclick="check()">
-        <p id="result"></p>
+        <input id type="button" type="button" value="Submit" onclick="check();">
+    </form>
+    <div id ="after_submit">
+        <p id = "number_correct"></p>
     </div>
     <script src="index.js"></script>
 </body>
