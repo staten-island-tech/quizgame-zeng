@@ -1,0 +1,16 @@
+body {
+  background-color: yellow;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#after_submit {
+  visibility: hidden;
+  font-weight: bolder;
+  background-color: lime;
+  text-align: center;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
